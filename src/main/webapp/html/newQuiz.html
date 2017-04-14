@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/registration.js"></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+
+<p class="topic">
+    <input type="text" name="topic" id="topic" placeholder="Вопрос">
+    <i class="icon-lock icon-large"></i>
+</p>
+<div id="answer">
+    <p class="field">
+        <input type="text" name="vote" id="vote" placeholder="Ответ">
+        <i class="icon-lock icon-large"></i>
+    </p>
+    <button type="button" id="addAnswer" onclick="newAnswer();"  >Добавить ответ</button>
+
+</div>
+    <button type="button" name="submit" id="submitButton" onclick="generateQuiz();">Сгенерировать</button>
+
+<div id="links">
+    <label id="quizPre" hidden><b>ID опроса:</b><br></label>
+    <label id="quiz" hidden></label>
+    <label id="quizDel" hidden><br><b>ID для удаления опроса:</b><br></label>
+    <label id="deleteQuiz" hidden></label>
+    <label id="quizRes"hidden><br><b>ID для просмотра результатов опроса:</b><br></label>
+    <label id="quizResult" hidden></label>
+</div>
+
+</body>
+</html>

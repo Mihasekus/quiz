@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script src="../js/registration.js"></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <p class="quizLink">
+        <input type="text" name="quizLink" id="quizLink" placeholder="Id опроса">
+        <i class="icon-lock icon-large"></i>
+    </p>
+    <button type="button" id="goQuiz" onclick="goToQuiz();"  >Найти опрос</button>
+    <label id="topic" ></label>
+    <form id="answers" action="/vote" hidden>
+    </form>
+</body>
+</html>
